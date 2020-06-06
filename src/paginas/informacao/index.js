@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import {} from 'react-native'
-import {Container, Texto, Botao} from '../../styles/pages_informacao';
+import {Container, Texto, Botao} from './styles';
 
 export default class Informacao extends Component {
    render() {

@@ -1,10 +1,10 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Botao, Texto, Container} from './styles/routes/index';
+import {Botao, Texto, Container} from './estilos/routes/index';
 
-import Main from './pages/main';
-import Cadastro from './pages/cadastro';
-import Informacao from './pages/informacao';
+import Main from './paginas/main/index';
+import Cadastro from './paginas/cadastro/index';
+import Informacao from './paginas/informacao/index';
 
 const Stack = createStackNavigator();
 
@@ -14,13 +14,13 @@ function DashBoard() {
          initialRouteName="Main"
          //headerMode={false}
          screenOptions={{
-            headerTransparent: true,
+            // headerTransparent: true,
             headerLayoutPreset: 'center',
             headerTitleAlign: 'center',
-            // headerTintColor: '#fff',
-            // headerStyle: {
-            //    backgroundColor: '#3385ff',
-            // },
+            headerTintColor: '#fff',
+            headerStyle: {
+               backgroundColor: '#333',
+            },
          }}>
          <Stack.Screen
             name="Main"

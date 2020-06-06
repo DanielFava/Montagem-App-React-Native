@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import './styles/status_bar/index';
+import './estilos/status_bar/index';
 
 import Routes from './routes';
 

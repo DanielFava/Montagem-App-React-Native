@@ -7,7 +7,7 @@ import {
    Input,
    Linha,
    ScrollView,
-} from '../../styles/pages_cadastro';
+} from './styles';
 
 export default class Cadastro extends Component {
    render() {

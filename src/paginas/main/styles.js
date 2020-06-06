@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.View`
-   background-color: #fff
+   background-color: #fff;
    flex: 1;
 `;
 
 export const Texto = styled.Text`
-   color: #000;
+   color: #fff;
 `;
 
 export const Botao = styled.TouchableOpacity`
@@ -21,12 +21,10 @@ export const Botao = styled.TouchableOpacity`
    right: 10px;
 `;
 
-export const FlatList = styled.FlatList`
-   background-color: #123;
-`;
+export const FlatList = styled.FlatList``;
 
 export const View = styled.View`
    background-color: #333;
-   height: 30px;
-   margin-bottom: 15px;
+   height: 50px;
+   margin: 15px;
 `;
