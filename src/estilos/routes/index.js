@@ -11,8 +11,7 @@ export const Botao = styled.TouchableOpacity`
    /* background-color: #ff1; */
    flex: 1;
    align-items: center;
-   border-radius: 100px;
-   border: 1px solid black;
+   justify-content: center;
 `;
 
 export const Texto = styled.Text`

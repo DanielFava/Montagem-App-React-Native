@@ -11,6 +11,7 @@ import {
    FlatList,
    View,
 } from './styles';
+//import {Container} from '../../estilos/themes/geral';
 
 export default class Main extends Component {
    constructor(props) {
