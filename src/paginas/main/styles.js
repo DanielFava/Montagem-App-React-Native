@@ -1,30 +1,55 @@
 import styled from 'styled-components';
+import colors from '../../estilos/themes/cor';
 
-export const Container = styled.View`
-   background-color: #fff;
-   flex: 1;
+export const FlatList = styled.FlatList`
+   margin: 15px;
 `;
 
-export const Texto = styled.Text`
-   color: #fff;
+export const ViewRow = styled.View`
+   background-color: ${colors.grey};
+   height: 55px;
+   width: 100%;
+   flex-direction: row-reverse;
+`;
+
+export const View = styled.View`
+   /* background-color: #8a2be2; */
+   height: 55px;
+   width: 70%;
 `;
 
 export const Botao = styled.TouchableOpacity`
-   height: 70px;
-   width: 70px;
-   border-radius: 100px;
-   border: 1px solid black;
-   align-items: center;
-   justify-content: center;
-   position: absolute;
-   bottom: 10px;
-   right: 10px;
+   /* background-color: #6495ed; */
+   height: 55px;
+   width: 100%;
 `;
 
-export const FlatList = styled.FlatList``;
+export const ViewEdit = styled.View`
+   background-color: #ccffcc;
+   height: 55px;
+   width: 15%;
+`;
 
-export const View = styled.View`
-   background-color: #333;
-   height: 50px;
-   margin: 15px;
+export const ViewDelete = styled.View`
+   background-color: #ffcccc;
+   height: 55px;
+   width: 15%;
+`;
+
+export const BotaoEdit = styled.TouchableOpacity`
+   background-color: ${colors.grey};
+   height: 55px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+`;
+
+export const BotaoDelete = styled.TouchableOpacity`
+   background-color: ${colors.grey};
+   height: 55px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
 `;

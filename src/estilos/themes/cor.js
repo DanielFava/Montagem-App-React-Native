@@ -5,6 +5,7 @@ const colors = {
 
    header: '#333333',
    primary: '#069',
+   text: '#000',
 };
 
 export default colors;
