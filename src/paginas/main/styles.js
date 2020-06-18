@@ -10,6 +10,8 @@ export const ViewRow = styled.View`
    height: 55px;
    width: 100%;
    flex-direction: row-reverse;
+   border-radius: 10px;
+   padding-right: 15px;
 `;
 
 export const View = styled.View`

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Alert} from 'react-native';
 import api from '../../servicos/server/api';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {Container, Texto} from '../../estilos/themes/geral';
@@ -38,40 +39,36 @@ export default class Main extends Component {
    Item = ({item}) => (
       <ViewRow>
          <ViewDelete>
-            <BotaoDelete>
+            <BotaoDelete onPress={this.BotaoDeletar}>
                <Icon name="delete" size={40} />
             </BotaoDelete>
          </ViewDelete>
          <ViewEdit>
-            <BotaoEdit>
+            <BotaoEdit onPress={() => alert('Editado!')}>
                <Icon name="edit" size={40} />
             </BotaoEdit>
          </ViewEdit>
          <View>
-            <Botao>
-               <Texto>Aqui</Texto>
-               <Texto>Aqui</Texto>
-               <Texto>Aqui</Texto>
+            <Botao
+               onPress={() => {
+                  this.props.navigation.navigate('Informacao');
+               }}>
+               <Texto># {item.id}</Texto>
             </Botao>
          </View>
       </ViewRow>
-
-      // <ViewRow>
-      //    <View>
-      //       <Botao>
-      //          <Texto>Aqui</Texto>
-      //       </Botao>
-      //    </View>
-      //    <ViewBotao>
-      //       <Botaotools>
-      //          <Icon name="edit" size={32} />
-      //       </Botaotools>
-      //       <Botaotools>
-      //          <Icon name="delete" size={32} />
-      //       </Botaotools>
-      //    </ViewBotao>
-      // </ViewRow>
    );
+   BotaoDeletar = () => {
+      Alert.alert(
+         'Deletar ',
+         'Você Deseja Deletar Essa Montagem !?',
+         [
+            {text: 'Cancel', onPress: () => alert('Cancelado')},
+            {text: 'OK', onPress: () => alert('Deletado')},
+         ],
+         {cancelable: false},
+      );
+   };
 
    render() {
       return (
